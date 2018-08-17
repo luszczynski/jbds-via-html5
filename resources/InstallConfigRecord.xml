@@ -10,7 +10,7 @@
 <installgroup>devstudio</installgroup>
 </com.jboss.devstudio.core.installer.JBossAsSelectPanel>
 <com.jboss.devstudio.core.installer.InstallAdditionalFeaturesPanel id="features">
-<ius>com.jboss.devstudio.core.package,org.testng.eclipse.feature.group,com.jboss.devstudio.fuse.feature.feature.group</ius>
+<ius>com.jboss.devstudio.core.package,org.testng.eclipse.feature.group</ius>
 <locations>devstudio</locations>
 </com.jboss.devstudio.core.installer.InstallAdditionalFeaturesPanel>
 <com.jboss.devstudio.core.installer.InstallAdditionalRuntimesPanel id="runtimes">
