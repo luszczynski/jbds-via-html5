@@ -1,29 +1,5 @@
-########################################################################
-#                   JBoss Developer Studio via HTML5                   #
-########################################################################
+FROM quay.io/gluszczy/fedora-java-8
 
-FROM fedora:26
-
-MAINTAINER Rich Lucente <rlucente@redhat.com>
-
-LABEL vendor="Red Hat" version="0.2" description="JBoss Developer Studio IDE"
-
-ENV HOME /home/jbdsuser
-
-# Add the needed packages for JBDS
-RUN dnf -y install \
-           gettext \
-           gtk3 \
-           java-1.8.0-openjdk-devel \
-           liberation-sans-fonts \
-           webkitgtk3 \
-           maven \
-           nss_wrapper \
-           openbox \
-           tigervnc-server \
-           wmctrl \
-           origin-clients \
-    && dnf -y clean all
 
 # Create installation directory and set the openbox window manager
 # configuration for all users
