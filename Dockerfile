@@ -6,15 +6,12 @@ FROM fedora:26
 
 MAINTAINER Rich Lucente <rlucente@redhat.com>
 
-LABEL vendor="Red Hat"
-LABEL version="0.2"
-LABEL description="JBoss Developer Studio IDE"
+LABEL vendor="Red Hat" version="0.2" description="JBoss Developer Studio IDE"
 
 ENV HOME /home/jbdsuser
 
 # Add the needed packages for JBDS
-RUN    dnf -y update \
-    && dnf -y install \
+RUN dnf -y install \
            gettext \
            gtk3 \
            java-1.8.0-openjdk-devel \
